@@ -10,6 +10,7 @@ Thumbs.db
 /backend/.env
 /backend/log.txt       # Your PHP log file
 /backend/composer.phar   # If you downloaded composer.phar directly into backend
+/backend/log.txt
 # If you ever run npm/node in backend, you might need this:
 #/backend/node_modules/
 
@@ -27,3 +28,4 @@ yarn-debug.log*
 .pnp
 .pnp.js
 node_modules
+.log
