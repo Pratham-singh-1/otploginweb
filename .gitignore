@@ -28,4 +28,12 @@ yarn-debug.log*
 .pnp
 .pnp.js
 node_modules
-.log
+
+# .gitignore
+
+# Ignore all log files
+*.log
+log.txt
+
+# Ignore the vendor directory
+/backend/vendor/
