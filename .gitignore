@@ -1,0 +1,29 @@
+# Common ignore for Node.js, React, and PHP projects
+
+# Project-wide ignores
+.DS_Store
+Thumbs.db
+.vscode/ # VS Code specific settings
+
+# Backend (PHP) ignores
+/backend/vendor/       # Composer dependencies
+/backend/.env
+/backend/log.txt       # Your PHP log file
+/backend/composer.phar   # If you downloaded composer.phar directly into backend
+# If you ever run npm/node in backend, you might need this:
+#/backend/node_modules/
+
+# Frontend (React) ignores
+/frontend/node_modules/ # <--- THIS IS THE CRITICAL LINE FOR FRONTEND NODE_MODULES
+/frontend/build/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# npm debug logs and Yarn PnP files
+npm-debug.log*
+yarn-debug.log*
+.pnp
+.pnp.js
+node_modules

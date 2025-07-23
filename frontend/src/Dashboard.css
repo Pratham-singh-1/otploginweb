@@ -1,0 +1,78 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.8s ease;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  animation: scaleIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-color: #f4f4f4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.dashboard-text {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 20px 0;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.dashboard-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-btn.logout {
+  background-color: #ef5350;
+  color: white;
+}
+
+.dashboard-btn.logout:hover {
+  background-color: #d32f2f;
+}
+
+.dashboard-btn.success {
+  background-color: #4caf50;
+  color: white;
+}
