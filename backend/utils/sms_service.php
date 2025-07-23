@@ -1,9 +1,7 @@
 <?php
-require_once __DIR__ . "/../vendor/autoload.php.php";
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+require_once __DIR__ . '/config.php';
 function sendSMS($mobile, $otp) {
-    $apiKey = $_ENV['FAST2SMS_API_KEY'] ;// Set in .env or .htaccess
+    $apiKey = FAST2SMS_API_KEY;
     $url = "https://www.fast2sms.com/dev/bulkV2";
 
     $fields = [
