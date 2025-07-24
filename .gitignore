@@ -11,7 +11,7 @@ Thumbs.db
 /backend/log.txt       # Your PHP log file
 /backend/composer.phar   # If you downloaded composer.phar directly into backend
 /backend/log.txt
-/backend/utils/config.php
+
 # If you ever run npm/node in backend, you might need this:
 #/backend/node_modules/
 

@@ -5,7 +5,8 @@ function sendSMS($mobile, $otp) {
     $url = "https://www.fast2sms.com/dev/bulkV2";
 
     $fields = [
-        "message" => "Your OTP is $otp",
+        "message" => "ProjectOTP: Your OTP for login 
+        is $otp , Donot Share it anyone else. It is valid for 5 min.",
         "language" => "english",
         "route" => "q",
         "numbers" => $mobile
